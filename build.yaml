@@ -67,13 +67,13 @@ include:
     shield: corne_right_peripheral nice_view_adapter nice_epaper
     artifact-name: nice_corne_right_peripheral_view
 
-
- 
 # Xiao_Dongle START
   - board: seeeduino_xiao_ble
     shield: corne_dongle_xiao
     #  -DCONFIG_ZMK_USB=y  -DCONFIG_ZMK_BLE=y
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Xiao_Dongle\" -DCONFIG_ZMK_STUDIO=y
+    cmake-args: 
+      - -DCONFIG_ZMK_KEYBOARD_NAME=\"Xiao_Dongle\"
+      - -DCONFIG_ZMK_STUDIO=y
     artifact-name: xiao_corne_dongle
     snippet: studio-rpc-usb-uart
 
