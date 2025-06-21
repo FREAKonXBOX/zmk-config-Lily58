@@ -60,7 +60,7 @@ include:
 
  
 
-  ### LILY58 START ###
+  ### LILY58 START ####
 
   # peripheral_right
   - board: nice_nano_v2
