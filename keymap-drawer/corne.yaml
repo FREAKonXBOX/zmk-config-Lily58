@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
-  default: [TAB, Q, W, E, R, T, Y, U, I, O, P, '`', LCTRL, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z, X, C, V, B, N, M, ',', ., /, RSHFT, LALT, lower, SPACE, SPACE,
-    raise, DEL]
+  default: [TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC, LCTRL, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z, X, C, V, B, N, M, ',', ., /, RSHFT, LALT, lower, SPACE,
+    SPACE, raise, DEL]
   lower:
   - '1'
   - '2'
@@ -14,7 +14,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - BSPC
+  - {t: ▽, type: trans}
   - LCTRL
   - {t: ▽, type: trans}
   - '&mmv MOVE_LEFT'
@@ -48,7 +48,7 @@ layers:
   raise:
   - ESC
   - VOL UP
-  - {t: ▽, type: trans}
+  - '&undo'
   - {t: ▽, type: trans}
   - '&ctrl_prtsc'
   - '&mcopy'
@@ -60,7 +60,7 @@ layers:
   - {t: ▽, type: trans}
   - LCTRL
   - MUTE
-  - '&undo'
+  - '&redo'
   - {t: ▽, type: trans}
   - '&mpaste'
   - '&csv'
@@ -72,7 +72,7 @@ layers:
   - {t: ▽, type: trans}
   - LSHFT
   - VOL DN
-  - '&redo'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

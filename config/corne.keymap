@@ -123,7 +123,7 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
 //                    | ALT | LWR | SPC |   | SPC | RSE  | DEL |
             bindings = <
-   &kp TAB    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp GRAVE
+   &kp TAB    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp LCTRL  &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT  &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                   &kp LALT &mo 1 &kp SPACE    &kp SPACE &mo 2 &kp DEL
@@ -132,12 +132,12 @@
 
         lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  1   |  2  |  3  |  ^  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
+// |  1   |  2  |  3  |  ^  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |      |
 // | CTRL |     | <-  |  v  | ->  |     |   |  +  | MB1 | MB2 | MB3 | SCU | BSLH |
 // | SHFT |     |     |     |     |     |   |  _  |  =  |  [  |  ]  | SCD | SHFT |
 //                    | ALT |     | SPC |   | SPC | MO3 | DEL |
             bindings = <
-   &kp N1     &kp N2       &kp N3          &mmv MOVE_UP    &kp N4       &kp N5         &kp N6    &kp N7    &kp N8    &kp N9     &kp N0         &kp BSPC
+   &kp N1     &kp N2       &kp N3          &mmv MOVE_UP    &kp N4       &kp N5         &kp N6    &kp N7    &kp N8    &kp N9     &kp N0         &trans
    &kp LCTRL  &trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &trans      &kp PLUS  &mkp MB1  &mkp MB2  &mkp MB3   &msc SCRL_UP   &kp BSLH
    &kp LSHFT  &trans       &trans          &trans          &trans       &trans         &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT   &msc SCRL_DOWN &trans
                                            &kp LALT        &trans       &kp SPACE      &kp SPACE &mo 3     &kp DEL
@@ -146,14 +146,14 @@
 
         raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC | VUP |     |     |C+PSC| COPY|   |     | HOME| UP  | END |     |      |
-// | CTRL | MUTE|UNDO |     |PASTE|C+S+V|   |     | LEFT| DOWN|RIGHT|PG_UP|      |
-// | SHFT | VDWN|REDO |     |     |     |   |     |     |  =  |     |PG_DN| SHFT |
+// |  ESC | VUP |UNDO |     |C+PSC| COPY|   |     | HOME| UP  | END |     |      |
+// | CTRL | MUTE|REDO |     |PASTE|C+S+V|   |     | LEFT| DOWN|RIGHT|PG_UP|      |
+// | SHFT | VDWN|     |     |     |     |   |     |     |  =  |     |PG_DN| SHFT |
 //                    | ALT | GUI | SPC |   | SPC |     | DEL |
             bindings = <
-   &kp ESC    &kp C_VOL_UP &trans      &trans       &ctrl_prtsc &mcopy    &trans    &kp HOME &kp UP    &kp END   &trans    &trans
-   &kp LCTRL  &kp C_MUTE   &undo       &trans       &mpaste     &csv      &trans    &kp LEFT &kp DOWN  &kp RIGHT &kp PG_UP &trans
-   &kp LSHFT  &kp C_VOL_DN &redo       &trans       &trans      &trans    &trans    &trans   &kp EQUAL &trans    &kp PG_DN &trans
+   &kp ESC    &kp C_VOL_UP &undo      &trans       &ctrl_prtsc &mcopy    &trans    &kp HOME &kp UP    &kp END   &trans    &trans
+   &kp LCTRL  &kp C_MUTE   &redo       &trans       &mpaste     &csv      &trans    &kp LEFT &kp DOWN  &kp RIGHT &kp PG_UP &trans
+   &kp LSHFT  &kp C_VOL_DN &trans       &trans       &trans      &trans    &trans    &trans   &kp EQUAL &trans    &kp PG_DN &trans
                                        &kp LALT     &kp LGUI    &kp SPACE &kp SPACE &mo 4    &kp DEL
             >;
         };
