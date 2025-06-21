@@ -53,14 +53,37 @@
 # cmake-args: -DKEYMAP_FILE=../../config/other-corne.keymap -DCONFIG_ZMK_KEYBOARD_NAME=\"other-corne\" -DEXTRA_CONF_FILE=../../config/other-corne.conf
 ---
 include:
+###################
+### CORNE START ###
+###################
 
-  ### CORNE START ###
-  
-  ### CORNE END ###
+# peripheral_left + nice_nano_v2 + nice_epaper
+  - board: nice_nano_v2
+    shield: corne_left_peripheral nice_view_adapter nice_epaper
+    artifact-name: nice_corne_left_peripheral_view
+
+# peripheral_left + nice_nano_v2 + nice_epaper
+  - board: nice_nano_v2
+    shield: corne_right_peripheral nice_view_adapter nice_epaper
+    artifact-name: nice_corne_right_peripheral_view
+
 
  
+# Xiao_Dongle START
+  - board: seeeduino_xiao_ble
+    shield: corne_dongle_xiao
+    #  -DCONFIG_ZMK_USB=y  -DCONFIG_ZMK_BLE=y
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Xiao_Dongle\" -DCONFIG_ZMK_STUDIO=y
+    artifact-name: xiao_corne_dongle
+    snippet: studio-rpc-usb-uart
 
-  ### LILY58 START ####
+#################
+### CORNE END ###
+#################
+
+####################
+### LILY58 START ###
+####################
 
   # peripheral_right
   - board: nice_nano_v2
@@ -74,7 +97,7 @@ include:
     cmake-args: -DCONFIG_ZMK_SLEEP=y -DCONFIG_ZMK_IDLE_TIMEOUT=60000
     artifact-name: nice_lily58_left_peripheral
 
-# Xiao_Dongle
+# Xiao_Dongle_Prospector
   - board: seeeduino_xiao_ble
     shield: lily58_dongle_xiao prospector_adapter
     cmake-args: 
@@ -88,10 +111,14 @@ include:
     artifact-name: xiao_lily58_dongle_xiao
     snippet: studio-rpc-usb-uart
 
-  ### LILY58 END ###
+##################
+### LILY58 END ###
+##################
 
+############################
+### SETTINGS_RESET START ###
+############################
 
-  ### SETTINGS_RESET START ###
   - board: nice_nano_v2
     shield: settings_reset
     artifact-name: nice_settings_reset
@@ -100,4 +127,6 @@ include:
     shield: settings_reset
     artifact-name: xiao_settings_reset
 
-  ### SETTINGS_RESET END ###
+##########################
+### SETTINGS_RESET END ###
+##########################
