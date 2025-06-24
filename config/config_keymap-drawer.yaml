@@ -366,45 +366,45 @@ parse_config:
     # defaults
     # AMPERSAND: '&'
     # AMPS: '&'
-    APOS: "'"
-    APOSTROPHE: "'"
+    APOS: {t: "'", s: '"'}
+    APOSTROPHE: {t: "'", s: '"'}
     ASTERISK: '*'
     ASTRK: '*'
     AT: '@'
     AT_SIGN: '@'
-    BACKSLASH: \
-    BSLH: \
+    BACKSLASH: {t: \, s: '|'}
+    BSLH: {t: \, s: '|'}
     CARET: ^
     COLON: ':'
-    COMMA: ','
+    COMMA: {t: ',', s: '<'}
     DLLR: $
     DOLLAR: $
-    DOT: .
+    DOT: {t: ., s: '>'}
     DOUBLE_QUOTES: '"'
     DQT: '"'
-    EQUAL: '='
+    EQUAL: {t: '=', s: '+'}
     EXCL: '!'
     EXCLAMATION: '!'
-    FSLH: /
-    GRAVE: '`'
+    FSLH: {t: /, s: '?'}
+    GRAVE: {t: '`', s: '~'}
     GREATER_THAN: '>'
     GT: '>'
     HASH: '#'
-    LBKT: '['
+    LBKT: {t: '[', s: '{'}
     LBRC: '{'
     LEFT_BRACE: '{'
-    LEFT_BRACKET: '['
+    LEFT_BRACKET: {t: '[', s: '{'}
     LEFT_PARENTHESIS: (
     LESS_THAN: <
     LPAR: (
     LT: <
-    MINUS: '-'
+    MINUS: {t: '-', s: '_'}
     NON_US_BACKSLASH: \
     NON_US_BSLH: '|'
     NON_US_HASH: '#'
     NUHS: '#'
     PERCENT: '%'
-    PERIOD: .
+    PERIOD: {t: ., s: '>'}
     PIPE: '|'
     PIPE2: '|'
     PLUS: +
@@ -412,17 +412,17 @@ parse_config:
     PRCNT: '%'
     QMARK: '?'
     QUESTION: '?'
-    RBKT: ']'
+    RBKT: {t: ']', s: '}'}
     RBRC: '}'
     RIGHT_BRACE: '}'
-    RIGHT_BRACKET: ']'
+    RIGHT_BRACKET: {t: ']', s: '}'}
     RIGHT_PARENTHESIS: )
     RPAR: )
-    SEMI: ;
-    SEMICOLON: ;
-    SINGLE_QUOTE: ''''
-    SLASH: /
-    SQT: ''''
+    SEMI: {t: ;, s: ':'}
+    SEMICOLON: {t: ;, s: ':'}
+    SINGLE_QUOTE: {t: "'", s: '"'}
+    SLASH: {t: /, s: '?'}
+    SQT: {t: "'", s: '"'}
     STAR: '*'
     TILDE: '~'
     TILDE2: '~'
