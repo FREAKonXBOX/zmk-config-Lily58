@@ -21,7 +21,6 @@ draw_config:
   small_pad: 2.0
   svg_extra_style: |
     /* For default sytles, see https://github.com/caksoylar/keymap-drawer/blob/main/keymap_drawer/config.py#L85 */
-
     svg.keymap {
       font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
       font-size: 16px;
@@ -317,8 +316,6 @@ parse_config:
     combo_rpar:   {draw_separate: true}
     combo_lbkt:   {draw_separate: true}
     combo_rbkt:   {draw_separate: true}
-    combo_tab:    {draw_separate: true}
-    combo_del:    {draw_separate: true}
     combo_esc:    {draw_separate: true}
     combo_ret:    {draw_separate: true}
     combo_lock:   {draw_separate: true}
