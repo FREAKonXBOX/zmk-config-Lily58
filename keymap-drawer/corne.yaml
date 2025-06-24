@@ -1,12 +1,12 @@
 layout: {zmk_keyboard: corne}
 layers:
-  default: [TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC, LCTRL, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z, X, C, V, B, N, M, ',', ., /, RSHFT, LALT, lower, SPACE,
-    SPACE, raise, DEL]
+  default: [↹, Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$',
+    Z, X, C, V, B, N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', '$$mdi:apple-keyboard-option$$', lower, ␣, ␣, raise, ⌦]
   lower:
   - '1'
   - '2'
   - '3'
-  - '&mmv MOVE_UP'
+  - Mouse ↑
   - '4'
   - '5'
   - '6'
@@ -15,19 +15,19 @@ layers:
   - '9'
   - '0'
   - {t: ▽, type: trans}
-  - LCTRL
+  - $$mdi:apple-keyboard-control$$
   - {t: ▽, type: trans}
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
   - {t: ▽, type: trans}
   - +
   - '&mkp MB1'
   - '&mkp MB2'
   - '&mkp MB3'
-  - '&msc SCRL_UP'
+  - Scroll ↑
   - \
-  - LSHFT
+  - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -37,41 +37,41 @@ layers:
   - '='
   - '['
   - ']'
-  - '&msc SCRL_DOWN'
+  - Scroll ↓
   - {t: ▽, type: trans}
-  - LALT
+  - $$mdi:apple-keyboard-option$$
   - {type: held}
-  - SPACE
-  - SPACE
+  - ␣
+  - ␣
   - function
-  - DEL
+  - ⌦
   raise:
-  - ESC
-  - VOL UP
+  - Esc
+  - Vol Up
   - '&undo'
   - {t: ▽, type: trans}
   - '&ctrl_prtsc'
   - '&mcopy'
   - {t: ▽, type: trans}
-  - HOME
-  - UP
-  - END
+  - Home
+  - ↑
+  - End
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LCTRL
+  - $$mdi:apple-keyboard-control$$
   - MUTE
   - '&redo'
   - {t: ▽, type: trans}
   - '&mpaste'
   - '&csv'
   - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - RIGHT
-  - PG UP
+  - ←
+  - ↓
+  - →
+  - Page Up
   - {t: ▽, type: trans}
-  - LSHFT
-  - VOL DN
+  - $$mdi:apple-keyboard-shift$$
+  - Vol Down
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -80,14 +80,14 @@ layers:
   - {t: ▽, type: trans}
   - '='
   - {t: ▽, type: trans}
-  - PG DN
+  - Page Down
   - {t: ▽, type: trans}
-  - LALT
-  - LGUI
-  - SPACE
-  - SPACE
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
+  - ␣
+  - ␣
   - {t: control, type: held}
-  - DEL
+  - ⌦
   function:
   - '!'
   - '@'
@@ -95,13 +95,13 @@ layers:
   - $
   - '%'
   - ^
-  - '&'
+  - AMPS
   - '*'
   - (
   - )
   - '-'
   - '='
-  - LCTRL
+  - $$mdi:apple-keyboard-control$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -113,7 +113,7 @@ layers:
   - ']'
   - \
   - '`'
-  - LSHFT
+  - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -125,26 +125,26 @@ layers:
   - '}'
   - '|'
   - '~'
-  - LALT
+  - $$mdi:apple-keyboard-option$$
   - {type: held}
-  - SPACE
-  - SPACE
+  - ␣
+  - ␣
   - {type: held}
-  - DEL
+  - ⌦
   control:
   - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
   - F1
   - F2
   - F3
   - F4
   - F5
   - F6
-  - '&sys_reset'
+  - Reset
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -156,7 +156,7 @@ layers:
   - F10
   - F11
   - F12
-  - '&bootloader'
+  - Boot
   - EP ON
   - EP OFF
   - EP TOG
@@ -167,10 +167,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&bootloader'
-  - LALT
+  - Boot
+  - $$mdi:apple-keyboard-option$$
   - {t: ▽, type: trans}
-  - SPACE
-  - SPACE
+  - ␣
+  - ␣
   - {type: held}
-  - DEL
+  - ⌦
