@@ -1,7 +1,7 @@
 # configuration for https://github.com/caksoylar/keymap-drawer
 draw_config:
   footer_text: 'Keymap View: <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>'
-  # dark_mode: auto
+  dark_mode: true
   n_columns: 1
   # draw_key_sides: true # draw a square in the middle of the keys
   key_w: 60.0
@@ -43,7 +43,7 @@ draw_config:
     #ffc
     */
     rect.held, rect.combo.held {
-        fill: #f00;
+        fill: #38761d;
     }
 
     /* Technique borrowed and extended from https://github.com/englmaxi/zmk-config/blob/master/keymap-drawer/config.yaml */
@@ -194,15 +194,15 @@ parse_config:
     'CLICK_LEFT': $$mdi:cursor-default-click$$
     'CLICK_RIGHT': $$mdi:cursor-default-click-outline$$
     'CLICK_MIDDLE': $$mdi:cursor-default-click-outline$$
-    # '&mmv MOVE_UP': Mouse ↑
-    # '&mmv MOVE_DOWN': Mouse ↓
-    # '&mmv MOVE_LEFT': Mouse ←
-    # '&mmv MOVE_RIGHT': Mouse →
+    '&mmv MOVE_UP': Mouse ↑
+    '&mmv MOVE_DOWN': Mouse ↓
+    '&mmv MOVE_LEFT': Mouse ←
+    '&mmv MOVE_RIGHT': Mouse →
 
-    # '&msc SCRL_UP': Scroll ↑
-    # '&msc SCRL_DOWN': Scroll ↓
-    # '&msc SCRL_LEFT': Scroll ←
-    # '&msc SCRL_RIGHT': Scroll →
+    '&msc SCRL_UP': Scroll ↑
+    '&msc SCRL_DOWN': Scroll ↓
+    '&msc SCRL_LEFT': Scroll ←
+    '&msc SCRL_RIGHT': Scroll →
 
     # '&mkp MCLK': Middle Click
     # '&mkp MB4': Back Click

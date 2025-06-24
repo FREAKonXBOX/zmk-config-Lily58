@@ -1,7 +1,8 @@
 layout: {zmk_keyboard: lily58}
 layers:
-  Default: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '`', TAB, Q, W, E, R, T, Y, U, I, O, P, '-', LCTRL, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
-    Z, X, C, V, B, '&ptrun', \, N, M, ',', ., /, RSHFT, LGUI, LALT, 'MOUSE,F#,SYMBOLS', SPACE, RET, 'MEDIA,TEXT MGMT,ARROWS', BSPC, DEL]
+  Default: [Esc, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '`', ↹, Q, W, E, R, T, Y, U, I, O, P, '-', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H,
+    J, K, L, ;, '''', '&td_shift', Z, X, C, V, B, '&ptrun', \, N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', '$$mdi:apple-keyboard-command$$', '$$mdi:apple-keyboard-option$$',
+    'MOUSE,F#,SYMBOLS', ␣, ⏎, 'MEDIA,TEXT MGMT,ARROWS', '$$mdi:backspace-outline$$', ⌦]
   MOUSE,F#,SYMBOLS:
   - F1
   - F2
@@ -18,32 +19,32 @@ layers:
   - '`'
   - '!'
   - '@'
-  - '&mmv MOVE_UP'
+  - Mouse ↑
   - $
   - '%'
   - ^
-  - '&'
+  - AMPS
   - '*'
   - (
   - )
   - '='
   - {t: ▽, type: trans}
   - '&win_c'
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
   - {t: ▽, type: trans}
   - +
   - '&mkp MB1'
   - '&mkp MB2'
   - '&mkp MB3'
-  - '&msc SCRL_UP'
+  - Scroll ↑
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '#'
-  - INS
+  - Insert
   - {t: ▽, type: trans}
   - NUMPAD,EXT POWER,KEYPAD
   - {t: ▽, type: trans}
@@ -51,7 +52,7 @@ layers:
   - +
   - '['
   - ']'
-  - '&msc SCRL_DOWN'
+  - Scroll ↓
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -63,8 +64,8 @@ layers:
   - {t: ▽, type: trans}
   MEDIA,TEXT MGMT,ARROWS:
   - MUTE
-  - VOL DN
-  - VOL UP
+  - Vol Down
+  - Vol Up
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -81,9 +82,9 @@ layers:
   - '&mcopy'
   - '&csc'
   - {t: ▽, type: trans}
-  - HOME
-  - UP
-  - END
+  - Home
+  - ↑
+  - End
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -93,10 +94,10 @@ layers:
   - '&mpaste'
   - '&csv'
   - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - RIGHT
-  - PG UP
+  - ←
+  - ↓
+  - →
+  - Page Up
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -110,7 +111,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PG DN
+  - Page Down
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -181,11 +182,11 @@ layers:
   - {t: ▽, type: trans}
   CONTROL,BOOTLOADER,RESET:
   - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -204,7 +205,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&sys_reset'
+  - Reset
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -216,7 +217,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&bootloader'
+  - Boot
   - EP ON
   - EP OFF
   - EP TOG
@@ -229,7 +230,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&bootloader'
+  - Boot
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
