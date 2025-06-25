@@ -364,8 +364,8 @@ parse_config:
     C_PREV: ⏮️
 
     # defaults
-    # AMPERSAND: '&'
-    # AMPS: '&'
+    AMPERSAND: '&'
+    AMPS: '&'
     APOS: {t: "'", s: '"'}
     APOSTROPHE: {t: "'", s: '"'}
     ASTERISK: '*'
