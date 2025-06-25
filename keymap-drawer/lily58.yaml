@@ -12,7 +12,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - '`'
+  - {t: '`', s: '~'}
   - ↹
   - Q
   - W
@@ -24,7 +24,7 @@ layers:
   - I
   - O
   - P
-  - '-'
+  - {t: '-', s: _}
   - $$mdi:apple-keyboard-control$$
   - A
   - S
@@ -35,8 +35,8 @@ layers:
   - J
   - K
   - L
-  - ;
-  - ''''
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
   - '&td_shift'
   - Z
   - X
@@ -44,12 +44,12 @@ layers:
   - V
   - B
   - '&ptrun'
-  - \
+  - {t: \, s: '|'}
   - N
   - M
-  - ','
-  - .
-  - /
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
@@ -72,7 +72,7 @@ layers:
   - F10
   - F11
   - F12
-  - '`'
+  - {t: '`', s: '~'}
   - '!'
   - '@'
   - Mouse ↑
@@ -83,7 +83,7 @@ layers:
   - '*'
   - (
   - )
-  - '='
+  - {t: '=', s: +}
   - {t: ▽, type: trans}
   - '&win_c'
   - Mouse ←
@@ -95,7 +95,7 @@ layers:
   - '&mkp MB2'
   - '&mkp MB3'
   - Scroll ↑
-  - \
+  - {t: \, s: '|'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -104,10 +104,10 @@ layers:
   - {t: ▽, type: trans}
   - NUMPAD,EXT POWER,KEYPAD
   - {t: ▽, type: trans}
-  - '-'
+  - {t: '-', s: _}
   - +
-  - '['
-  - ']'
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - Scroll ↓
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -131,7 +131,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '`'
+  - {t: '`', s: '~'}
   - {t: ▽, type: trans}
   - '&undo'
   - '&ctrl_prtsc'
@@ -154,7 +154,7 @@ layers:
   - ↓
   - →
   - Page Up
-  - \
+  - {t: \, s: '|'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -188,7 +188,7 @@ layers:
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
-  - /
+  - {t: /, s: '?'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -224,9 +224,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '0', s: )}
-  - .
-  - .
-  - '-'
+  - {t: ., s: '>'}
+  - {t: ., s: '>'}
+  - {t: '-', s: _}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
