@@ -1,7 +1,7 @@
 # configuration for https://github.com/caksoylar/keymap-drawer
 draw_config:
   footer_text: 'Keymap View: <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>'
-  dark_mode: true
+  dark_mode: True
   n_columns: 1
   # draw_key_sides: true # draw a square in the middle of the keys
   key_w: 60.0
@@ -19,6 +19,18 @@ draw_config:
   arc_radius: 6.0
   append_colon_to_layer_header: true
   small_pad: 2.0
+
+  # style CSS to override colors for dark mode
+  svg_style_dark: |
+          svg.keymap { fill: #d1d6db; }
+          rect.key { fill: #3f4750; }
+          rect.key, rect.combo { stroke: #60666c; }
+          rect.combo, rect.combo-separate { fill: #1f3d7a; }
+          rect.held, rect.combo.held { fill: #38761d; }
+          text.label, text.footer { stroke: white; }
+          text.trans { fill: #7e8184; }
+          path.combo { stroke: #7f7f7f; }
+
   svg_extra_style: |
     /* For default sytles, see https://github.com/caksoylar/keymap-drawer/blob/main/keymap_drawer/config.py#L85 */
     svg.keymap {
@@ -238,7 +250,7 @@ parse_config:
     # Personal ZMK Macros, TapDance, ModShift
     # example: '&td_example': {t: 'tap symbol', h: 'hold symbol', s: 'shift symbol', type: toggle}
     # use tabler icon $$tabler:brightness-up$$
-    '&td_shift': {t: 'Shift', s: $$tabler:letter-case-upper$$, type: tap_dance}
+    '&td_shift': {t: 'Shift', s: $$tabler:letter-case-upper$$}
     '&mcopy': {t: $$tabler:copy$$}
     '&mpaste': {t: $$tabler:clipboard$$}
     '&csc': {t: $$tabler:copy-check$$}

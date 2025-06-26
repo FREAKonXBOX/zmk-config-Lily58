@@ -37,7 +37,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - {t: Shift, s: '$$tabler:letter-case-upper$$', type: tap_dance}
+  - {t: Shift, s: '$$tabler:letter-case-upper$$'}
   - Z
   - X
   - C
