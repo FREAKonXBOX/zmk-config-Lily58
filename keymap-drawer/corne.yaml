@@ -25,7 +25,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - $$tabler:letter-case$$
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -36,7 +36,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$tabler:letter-case$$
+  - $$mdi:apple-keyboard-shift$$
   - $$tabler:alt$$
   - lower
   - ␣
@@ -63,12 +63,12 @@ layers:
   - Mouse →
   - {t: ▽, type: trans}
   - +
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - '&mkp MB3'
+  - $$mdi:mouse-left-click$$
+  - $$mdi:mouse-right-click$$
+  - $$mdi:mouse-scroll-wheel$$
   - Scroll ↑
   - {t: \, s: '|'}
-  - $$tabler:letter-case$$
+  - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -111,7 +111,7 @@ layers:
   - →
   - Page Up
   - {t: ▽, type: trans}
-  - $$tabler:letter-case$$
+  - $$mdi:apple-keyboard-shift$$
   - $$tabler:volume-2$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -154,7 +154,7 @@ layers:
   - {t: ']', s: '}'}
   - {t: \, s: '|'}
   - {t: '`', s: '~'}
-  - $$tabler:letter-case$$
+  - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

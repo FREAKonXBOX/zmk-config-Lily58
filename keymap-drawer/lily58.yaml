@@ -37,20 +37,20 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - {t: Shift, s: '$$tabler:letter-case-upper$$'}
+  - {t: Shift, s: '$$mdi:caps-lock$$'}
   - Z
   - X
   - C
   - V
   - B
-  - $$tabler:brand-windows$$
+  - $$mdi:flash-outline$$
   - {t: \, s: '|'}
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$tabler:letter-case$$
+  - $$mdi:apple-keyboard-shift$$
   - $$tabler:brand-windows$$
   - $$tabler:alt$$
   - MOUSE,F#,SYMBOLS
@@ -91,9 +91,9 @@ layers:
   - Mouse →
   - {t: ▽, type: trans}
   - +
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - '&mkp MB3'
+  - $$mdi:mouse-left-click$$
+  - $$mdi:mouse-right-click$$
+  - $$mdi:mouse-scroll-wheel$$
   - Scroll ↑
   - {t: \, s: '|'}
   - {t: ▽, type: trans}

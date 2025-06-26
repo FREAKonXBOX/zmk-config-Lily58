@@ -223,6 +223,10 @@ parse_config:
     # '&mkp MCLK': Middle Click
     # '&mkp MB4': Back Click
     # '&mkp MB5': Forward Click
+    '&mkp MB1': $$mdi:mouse-left-click$$
+    '&mkp MB2': $$mdi:mouse-right-click$$
+    '&mkp MB3': $$mdi:mouse-scroll-wheel$$
+
 
 
     # layers
@@ -242,20 +246,20 @@ parse_config:
     '&mt LSHFT COMMA': {t: $$mdi:google-downasaur$$, h: $$mdi:apple-keyboard-shift$$, type: tap_dance}
 
     # CONTROL CMD/WINDOWS SHIFT ALT/META/OPTION
-    '&kp LSHFT': {t: $$tabler:letter-case$$}
+    '&kp LSHFT': {t: $$mdi:apple-keyboard-shift$$}
     '&kp LCTRL': $$mdi:apple-keyboard-control$$
     '&kp RCTRL': $$mdi:apple-keyboard-control$$
     '&kp LGUI': {t: $$tabler:brand-windows$$}
     '&kp RGUI': {t: $$tabler:brand-windows$$}
     '&kp LALT': {t: $$tabler:alt$$}
     '&kp RALT': {t: $$tabler:alt$$}
-    '&kp RSHFT': {t: $$tabler:letter-case$$}
+    '&kp RSHFT': {t: $$mdi:apple-keyboard-shift$$}
     '&kp BSPC': $$mdi:backspace-outline$$
 
     # Personal ZMK Macros, TapDance, ModShift
     # example: '&td_example': {t: 'tap symbol', h: 'hold symbol', s: 'shift symbol', type: toggle}
     # use tabler icon $$tabler:brightness-up$$
-    '&td_shift': {t: 'Shift', s: $$tabler:letter-case-upper$$}
+    '&td_shift': {t: 'Shift', s: $$mdi:caps-lock$$}
     '&mcopy': {t: $$tabler:copy$$}
     '&mpaste': {t: $$tabler:clipboard$$}
     '&csc': {t: $$tabler:copy-check$$}
@@ -263,7 +267,7 @@ parse_config:
     '&ctrl_prtsc': {t: $$tabler:focus-centered$$}
     '&undo': {t: $$tabler:arrow-back$$}
     '&redo': {t: $$tabler:arrow-forward$$}
-    '&ptrun': {t: $$tabler:brand-windows$$}
+    '&ptrun': {t: $$mdi:flash-outline$$}
     '&win_c': {t: $$tabler:pointer-pin$$}
 
   qmk_keycode_map:
@@ -368,8 +372,8 @@ parse_config:
     RALT: {t: $$tabler:alt$$}
     LGUI: {t: $$tabler:brand-windows$$}
     RGUI: {t: $$tabler:brand-windows$$}
-    LSHFT: {t: $$tabler:letter-case$$}
-    RSHFT: {t: $$tabler:letter-case$$}
+    LSHFT: {t: $$mdi:apple-keyboard-shift$$}
+    RSHFT: {t: $$mdi:apple-keyboard-shift$$}
     ESC: Esc
     SPACE: ␣
     BSPC: ⌫
@@ -382,7 +386,7 @@ parse_config:
     INS: Insert
     HOME: Home
     END: End
-    CAPS: {t: $$tabler:letter-case-upper$$}
+    CAPS: {t: $$mdi:caps-lock$$}
     PSCRN: {t: $$tabler:focus-centered$$}
     PAUSE_BREAK: Pause Break
 
