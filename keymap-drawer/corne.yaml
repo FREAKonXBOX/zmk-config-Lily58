@@ -25,7 +25,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-shift$$
+  - $$tabler:letter-case$$
   - Z
   - X
   - C
@@ -36,8 +36,8 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-option$$
+  - $$tabler:letter-case$$
+  - $$tabler:alt$$
   - lower
   - ␣
   - ␣
@@ -68,7 +68,7 @@ layers:
   - '&mkp MB3'
   - Scroll ↑
   - {t: \, s: '|'}
-  - $$mdi:apple-keyboard-shift$$
+  - $$tabler:letter-case$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -80,7 +80,7 @@ layers:
   - {t: ']', s: '}'}
   - Scroll ↓
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-option$$
+  - $$tabler:alt$$
   - {type: held}
   - ␣
   - ␣
@@ -88,7 +88,7 @@ layers:
   - ⌦
   raise:
   - Esc
-  - Vol Up
+  - $$tabler:volume$$
   - '&undo'
   - {t: ▽, type: trans}
   - '&ctrl_prtsc'
@@ -100,7 +100,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-control$$
-  - MUTE
+  - $$volume-off$$
   - '&redo'
   - {t: ▽, type: trans}
   - '&mpaste'
@@ -111,8 +111,8 @@ layers:
   - →
   - Page Up
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-shift$$
-  - Vol Down
+  - $$tabler:letter-case$$
+  - $$tabler:volume-2$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -123,8 +123,8 @@ layers:
   - {t: ▽, type: trans}
   - Page Down
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
+  - $$tabler:alt$$
+  - $$tabler:brand-windows$$
   - ␣
   - ␣
   - {t: control, type: held}
@@ -154,7 +154,7 @@ layers:
   - {t: ']', s: '}'}
   - {t: \, s: '|'}
   - {t: '`', s: '~'}
-  - $$mdi:apple-keyboard-shift$$
+  - $$tabler:letter-case$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -166,7 +166,7 @@ layers:
   - '}'
   - '|'
   - '~'
-  - $$mdi:apple-keyboard-option$$
+  - $$tabler:alt$$
   - {type: held}
   - ␣
   - ␣
@@ -209,7 +209,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Boot
-  - $$mdi:apple-keyboard-option$$
+  - $$tabler:alt$$
   - {t: ▽, type: trans}
   - ␣
   - ␣
