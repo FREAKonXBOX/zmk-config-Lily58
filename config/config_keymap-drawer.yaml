@@ -116,12 +116,12 @@ draw_config:
   glyph_shifted_size: 15
   glyphs: {}
   glyph_urls:
-    #"tabler": "https://unpkg.com/@tabler/icons/icons/outline/{}.svg"
-    # tablerf: https://unpkg.com/@tabler/icons/icons/filled/{}.svg
+    tabler: https://unpkg.com/@tabler/icons/icons/outline/{}.svg
+    tablerf: https://unpkg.com/@tabler/icons/icons/filled/{}.svg
     mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
     mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
     material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
-  use_local_cache: false
+  use_local_cache: True
 parse_config:
   raw_binding_map:
     '&sys_reset': Reset
@@ -225,14 +225,14 @@ parse_config:
     '&mt LSHFT COMMA': {t: $$mdi:google-downasaur$$, h: $$mdi:apple-keyboard-shift$$, type: tap_dance}
 
     # CONTROL CMD/WINDOWS SHIFT ALT/META/OPTION
-    '&kp LSHFT': $$tabler:letter-case$$
+    '&kp LSHFT': {t: $$tabler:letter-case$$}
     '&kp LCTRL': $$mdi:apple-keyboard-control$$
     '&kp RCTRL': $$mdi:apple-keyboard-control$$
-    '&kp LGUI': $$tabler:brand-windows$$
-    '&kp RGUI': $$tabler:brand-windows$$
-    '&kp LALT': $$tabler:alt$$
-    '&kp RALT': $$tabler:alt$$
-    '&kp RSHFT': $$tabler:letter-case$$
+    '&kp LGUI': {t: $$tabler:brand-windows$$}
+    '&kp RGUI': {t: $$tabler:brand-windows$$}
+    '&kp LALT': {t: $$tabler:alt$$}
+    '&kp RALT': {t: $$tabler:alt$$}
+    '&kp RSHFT': {t: $$tabler:letter-case$$}
     '&kp BSPC': $$mdi:backspace-outline$$
 
   qmk_keycode_map:
@@ -340,18 +340,18 @@ parse_config:
     # custom mappings
     C_VOL_UP: {t: $$tabler:volume$$}
     C_VOL_DN: {t: $$tabler:volume-2$$}
-    C_MUTE: {t: $$volume-off$$}
+    C_MUTE: {t: $$tabler:volume-off$$}
     C_AL_CALC: Calc
     # C_PP: Play Pause
 
     LCTRL: $$mdi:apple-keyboard-control$$
     RCTRL: $$mdi:apple-keyboard-control$$
-    LALT: $$tabler:alt$$
-    RALT: $$tabler:alt$$
-    LGUI: $$tabler:brand-windows$$
-    RGUI: $$tabler:brand-windows$$
-    LSHFT: $$tabler:letter-case$$
-    RSHFT: $$tabler:letter-case$$
+    LALT: {t: $$tabler:alt$$}
+    RALT: {t: $$tabler:alt$$}
+    LGUI: {t: $$tabler:brand-windows$$}
+    RGUI: {t: $$tabler:brand-windows$$}
+    LSHFT: {t: $$tabler:letter-case$$}
+    RSHFT: {t: $$tabler:letter-case$$}
     ESC: Esc
     SPACE: ␣
     BSPC: ⌫
@@ -364,8 +364,8 @@ parse_config:
     INS: Insert
     HOME: Home
     END: End
-    CAPS: $$tabler:letter-case-upper$$
-    PSCRN: $$tabler:focus-centered$$
+    CAPS: {t: $$tabler:letter-case-upper$$}
+    PSCRN: {t: $$tabler:focus-centered$$}
     PAUSE_BREAK: Pause Break
 
     UP: ↑
