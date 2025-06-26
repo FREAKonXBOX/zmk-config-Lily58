@@ -58,9 +58,9 @@ draw_config:
     }
 
     /* Technique borrowed and extended from https://github.com/englmaxi/zmk-config/blob/master/keymap-drawer/config.yaml */
-    .icon-tabler {
-    fill: d1d6db;
-    stroke: d1d6db;
+    .icon-tabler > path {
+    fill: white;
+    stroke: white;
     stroke-width: 2;
     }
     .sym_sub_text.tap {
