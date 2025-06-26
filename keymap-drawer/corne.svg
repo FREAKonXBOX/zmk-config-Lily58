@@ -395,7 +395,7 @@ rect.held, rect.combo.held {
 
 /* Technique borrowed and extended from https://github.com/englmaxi/zmk-config/blob/master/keymap-drawer/config.yaml */
 .icon-tabler > path {
-fill: white;
+fill: inherit;
 stroke: white;
 stroke-width: 2;
 }

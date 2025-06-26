@@ -216,6 +216,25 @@
   <path d="M14 13h7" />
 </svg>
 </svg>
+<svg id="tabler:pointer-pin">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-pointer-pin"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M14.778 12.222l3.113 -2.09a1.2 1.2 0 0 0 -.309 -2.228l-13.582 -3.904l3.904 13.563a1.2 1.2 0 0 0 2.228 .308l2.09 -3.093l.381 .381" />
+  <path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" />
+  <path d="M19 18v.01" />
+</svg>
+</svg>
 <svg id="tabler:volume">
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -435,7 +454,7 @@ rect.held, rect.combo.held {
 
 /* Technique borrowed and extended from https://github.com/englmaxi/zmk-config/blob/master/keymap-drawer/config.yaml */
 .icon-tabler > path {
-fill: white;
+fill: inherit;
 stroke: white;
 stroke-width: 2;
 }
@@ -872,7 +891,7 @@ stroke-width: 2;
 </g>
 <g transform="translate(84, 161)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&amp;win_c</text>
+<use href="#tabler:pointer-pin" xlink:href="#tabler:pointer-pin" x="-9" y="-9" height="18" width="18.0" class="key tap glyph tabler:pointer-pin"/>
 </g>
 <g transform="translate(140, 147)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

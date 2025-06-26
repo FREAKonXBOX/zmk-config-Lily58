@@ -85,7 +85,7 @@ layers:
   - )
   - {t: '=', s: +}
   - {t: ▽, type: trans}
-  - '&win_c'
+  - $$tabler:pointer-pin$$
   - Mouse ←
   - Mouse ↓
   - Mouse →
