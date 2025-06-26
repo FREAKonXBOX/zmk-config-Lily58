@@ -235,6 +235,19 @@ parse_config:
     '&kp RSHFT': {t: $$tabler:letter-case$$}
     '&kp BSPC': $$mdi:backspace-outline$$
 
+    # Personal ZMK Macros, TapDance, ModShift
+    # example: '&td_example': {t: 'tap symbol', h: 'hold symbol', s: 'shift symbol', type: toggle}
+    # use tabler icon $$tabler:brightness-up$$
+    '&td_shift': {t: 'Shift', s: $$tabler:letter-case-upper$$, type: tap_dance}
+    '&mcopy': {t: $$tabler:copy$$}
+    '&mpaste': {t: $$tabler:clipboard$$}
+    '&csc': {t: $$tabler:copy-check$$}
+    '&csv': {t: $$tabler:clipboard-check$$}
+    '&ctrl_prtsc': {t: $$tabler:focus-centered$$}
+    '&undo': {t: $$tabler:arrow-back$$}
+    '&redo': {t: $$tabler:arrow-forward$$}
+    '&ptrun': {t: $$tabler:brand-windows$$}
+
   qmk_keycode_map:
     XXXXXXX: ''
     'NO': ''
@@ -323,19 +336,6 @@ parse_config:
     combo_slsh:   {draw_separate: true}
 
   zmk_keycode_map:
-
-    # Personal ZMK Macros, TapDance, ModShift
-    # example: '&td_example': {t: 'tap symbol', h: 'hold symbol', s: 'shift symbol', type: toggle}
-    # use tabler icon $$tabler:brightness-up$$
-    '&td_shift': {t: 'Shift', s: $$tabler:letter-case-upper$$, type: tap_dance}
-    '&mcopy': {t: $$tabler:copy$$}
-    '&mpaste': {t: $$tabler:clipboard$$}
-    '&csc': {t: $$tabler:copy-check$$}
-    '&csv': {t: $$tabler:clipboard-check$$}
-    '&ctrl_prtsc': {t: $$tabler:focus-centered$$}
-    '&undo': {t: $$tabler:arrow-back$$}
-    '&redo': {t: $$tabler:arrow-forward$$}
-    '&ptrun': {t: $$tabler:brand-windows$$}
 
     # custom mappings
     C_VOL_UP: {t: $$tabler:volume$$}

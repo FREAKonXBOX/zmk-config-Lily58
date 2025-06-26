@@ -89,10 +89,10 @@ layers:
   raise:
   - Esc
   - $$tabler:volume$$
-  - '&undo'
+  - $$tabler:arrow-back$$
   - {t: ▽, type: trans}
-  - '&ctrl_prtsc'
-  - '&mcopy'
+  - $$tabler:focus-centered$$
+  - $$tabler:copy$$
   - {t: ▽, type: trans}
   - Home
   - ↑
@@ -101,10 +101,10 @@ layers:
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-control$$
   - $$tabler:volume-off$$
-  - '&redo'
+  - $$tabler:arrow-forward$$
   - {t: ▽, type: trans}
-  - '&mpaste'
-  - '&csv'
+  - $$tabler:clipboard$$
+  - $$tabler:clipboard-check$$
   - {t: ▽, type: trans}
   - ←
   - ↓
