@@ -50,9 +50,9 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
+  - $$tabler:letter-case$$
+  - $$tabler:brand-windows$$
+  - $$tabler:alt$$
   - MOUSE,F#,SYMBOLS
   - ␣
   - ⏎
@@ -119,10 +119,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   MEDIA,TEXT MGMT,ARROWS:
-  - MUTE
-  - Vol Down
-  - Vol Up
-  - {t: ▽, type: trans}
+  - $$volume-off$$
+  - $$tabler:volume-2$$
+  - $$tabler:volume$$
+  - '&csc'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
