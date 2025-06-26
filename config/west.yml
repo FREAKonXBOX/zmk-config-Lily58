@@ -17,8 +17,12 @@ manifest:
       revision: main
       import: app/west.yml
     # dongle_display
-    - name: zmk-dongle-display
-      remote: englmaxi
+    #- name: zmk-dongle-display
+    #  remote: englmaxi
+    #  revision: main
+    # Diff Prospector Dongle
+    - name: zmk-dongle-screen
+      remote: janpfischer
       revision: main
     # nice_oled - nice_epaper
     - name: zmk-nice-oled
