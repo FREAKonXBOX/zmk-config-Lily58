@@ -116,8 +116,8 @@ draw_config:
   glyph_shifted_size: 15
   glyphs: {}
   glyph_urls:
-    tabler: https://unpkg.com/@tabler/icons/icons/outline/{}.svg
-    tablerf: https://unpkg.com/@tabler/icons/icons/filled/{}.svg
+    tabler: https://app.unpkg.com/@tabler/icons/files/icons/outline/{}.svg
+    tablerf: https://app.unpkg.com/@tabler/icons/files/icons/outline/{}.svg
     mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
     mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
     material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
@@ -327,7 +327,7 @@ parse_config:
     # Personal ZMK Macros, TapDance, ModShift
     # example: '&td_example': {t: 'tap symbol', h: 'hold symbol', s: 'shift symbol', type: toggle}
     # use tabler icon $$tabler:brightness-up$$
-    '&td_shift': {t: 'Shift', s: $$tabler:letter-case-upper$$}
+    '&td_shift': {t: 'Shift', s: $$tabler:letter-case-upper$$, type: tap_dance}
     '&mcopy': {t: $$tabler:copy$$}
     '&mpaste': {t: $$tabler:clipboard$$}
     '&csc': {t: $$tabler:copy-check$$}
