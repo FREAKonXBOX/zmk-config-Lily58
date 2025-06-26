@@ -327,20 +327,20 @@ parse_config:
     # Personal ZMK Macros, TapDance, ModShift
     # example: '&td_example': {t: 'tap symbol', h: 'hold symbol', s: 'shift symbol', type: toggle}
     # use tabler icon $$tabler:brightness-up$$
-    '&td_shift': {t: 'Shift', s: '$$tabler:letter-case-upper$$'}
-    '&mcopy': {t: '$$tabler:copy$$'}
-    '&mpaste': {t: '$$tabler:clipboard$$'}
-    '&csc': {t: '$$tabler:copy-check$$'}
-    '&csv': {t: '$$tabler:clipboard-check$$'}
-    '&ctrl_prtsc': {t: '$$tabler:focus-centered$$'}
-    '&undo': {t: '$$tabler:arrow-back$$'}
-    '&redo': {t: '$$tabler:arrow-forward$$'}
-    '&ptrun': {t: '$$tabler:brand-windows$$'}
+    '&td_shift': {t: 'Shift', s: $$tabler:letter-case-upper$$}
+    '&mcopy': {t: $$tabler:copy$$}
+    '&mpaste': {t: $$tabler:clipboard$$}
+    '&csc': {t: $$tabler:copy-check$$}
+    '&csv': {t: $$tabler:clipboard-check$$}
+    '&ctrl_prtsc': {t: $$tabler:focus-centered$$}
+    '&undo': {t: $$tabler:arrow-back$$}
+    '&redo': {t: $$tabler:arrow-forward$$}
+    '&ptrun': {t: $$tabler:brand-windows$$}
 
     # custom mappings
-    C_VOL_UP: {t: '$$tabler:volume$$'}
-    C_VOL_DN: {t: '$$tabler:volume-2$$'}
-    C_MUTE: {t: '$$volume-off$$'}
+    C_VOL_UP: {t: $$tabler:volume$$}
+    C_VOL_DN: {t: $$tabler:volume-2$$}
+    C_MUTE: {t: $$volume-off$$}
     C_AL_CALC: Calc
     # C_PP: Play Pause
 
