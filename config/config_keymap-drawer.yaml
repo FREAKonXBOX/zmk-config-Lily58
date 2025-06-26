@@ -27,7 +27,7 @@ draw_config:
           rect.key, rect.combo { stroke: #60666c; }
           rect.combo, rect.combo-separate { fill: #1f3d7a; }
           rect.held, rect.combo.held { fill: #38761d; }
-          text.label, text.footer { stroke: white; }
+          text.label, text.footer { stroke: black; }
           text.trans { fill: #7e8184; }
           path.combo { stroke: #7f7f7f; }
 
@@ -58,6 +58,11 @@ draw_config:
     }
 
     /* Technique borrowed and extended from https://github.com/englmaxi/zmk-config/blob/master/keymap-drawer/config.yaml */
+    .icon-tabler {
+    fill: d1d6db;
+    stroke: d1d6db;
+    stroke-width: 2;
+    }
     .sym_sub_text.tap {
       translate: -5px 2px;
       font-size: 20px;
