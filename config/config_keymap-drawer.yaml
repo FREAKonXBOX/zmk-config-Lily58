@@ -259,7 +259,7 @@ parse_config:
     # Personal ZMK Macros, TapDance, ModShift
     # example: '&td_example': {t: 'tap symbol', h: 'hold symbol', s: 'shift symbol', type: toggle}
     # use tabler icon $$tabler:brightness-up$$
-    '&td_shift': {t: 'Shift', s: $$mdi:caps-lock$$}
+    '&td_shift': {t: $$mdi:apple-keyboard-shift$$, s: $$mdi:caps-lock$$}
     '&mcopy': {t: $$tabler:copy$$}
     '&mpaste': {t: $$tabler:clipboard$$}
     '&csc': {t: $$tabler:copy-check$$}

@@ -37,7 +37,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - {t: Shift, s: '$$mdi:caps-lock$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', s: '$$mdi:caps-lock$$'}
   - Z
   - X
   - C
@@ -105,7 +105,7 @@ layers:
   - NUMPAD,EXT POWER,KEYPAD
   - {t: ▽, type: trans}
   - {t: '-', s: _}
-  - +
+  - {t: ▽, type: trans}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - Scroll ↓
@@ -122,7 +122,7 @@ layers:
   - $$tabler:volume-off$$
   - $$tabler:volume-2$$
   - $$tabler:volume$$
-  - $$tabler:copy-check$$
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
