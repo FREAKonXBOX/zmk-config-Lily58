@@ -225,14 +225,14 @@ parse_config:
     '&mt LSHFT COMMA': {t: $$mdi:google-downasaur$$, h: $$mdi:apple-keyboard-shift$$, type: tap_dance}
 
     # CONTROL CMD/WINDOWS SHIFT ALT/META/OPTION
-    '&kp LSHFT': $$mdi:apple-keyboard-shift$$
+    '&kp LSHFT': $$tabler:letter-case$$
     '&kp LCTRL': $$mdi:apple-keyboard-control$$
     '&kp RCTRL': $$mdi:apple-keyboard-control$$
-    '&kp LGUI': $$mdi:apple-keyboard-command$$
-    '&kp RGUI': $$mdi:apple-keyboard-command$$
-    '&kp LALT': $$mdi:apple-keyboard-option$$
-    '&kp RALT': $$mdi:apple-keyboard-option$$
-    '&kp RSHFT': $$mdi:apple-keyboard-shift$$
+    '&kp LGUI': $$tabler:brand-windows$$
+    '&kp RGUI': $$tabler:brand-windows$$
+    '&kp LALT': $$tabler:alt$$
+    '&kp RALT': $$tabler:alt$$
+    '&kp RSHFT': $$tabler:letter-case$$
     '&kp BSPC': $$mdi:backspace-outline$$
 
   qmk_keycode_map:
@@ -324,20 +324,34 @@ parse_config:
 
   zmk_keycode_map:
 
+    # Personal ZMK Macros, TapDance, ModShift
+    # example: '&td_example': {t: 'tap symbol', h: 'hold symbol', s: 'shift symbol', type: toggle}
+    # use tabler icon $$tabler:brightness-up$$
+    '&td_shift': {t: 'Shift', s: '$$tabler:letter-case-upper$$'}
+    '&mcopy': {t: '$$tabler:copy$$'}
+    '&mpaste': {t: '$$tabler:clipboard$$'}
+    '&csc': {t: '$$tabler:copy-check$$'}
+    '&csv': {t: '$$tabler:clipboard-check$$'}
+    '&ctrl_prtsc': {t: '$$tabler:focus-centered$$'}
+    '&undo': {t: '$$tabler:arrow-back$$'}
+    '&redo': {t: '$$tabler:arrow-forward$$'}
+    '&ptrun': {t: '$$tabler:brand-windows$$'}
+
     # custom mappings
-    C_VOL_UP: Vol Up
-    C_VOL_DN: Vol Down
+    C_VOL_UP: {t: '$$tabler:volume$$'}
+    C_VOL_DN: {t: '$$tabler:volume-2$$'}
+    C_MUTE: {t: '$$volume-off$$'}
     C_AL_CALC: Calc
     # C_PP: Play Pause
 
-    LCTRL: Ctrl
-    RCTRL: Ctrl
-    LALT: Alt
-    RALT: Alt
-    LGUI: Gui
-    RGUI: Gui
-    LSHFT: Shift
-    RSHFT: Shift
+    LCTRL: $$mdi:apple-keyboard-control$$
+    RCTRL: $$mdi:apple-keyboard-control$$
+    LALT: $$tabler:alt$$
+    RALT: $$tabler:alt$$
+    LGUI: $$tabler:brand-windows$$
+    RGUI: $$tabler:brand-windows$$
+    LSHFT: $$tabler:letter-case$$
+    RSHFT: $$tabler:letter-case$$
     ESC: Esc
     SPACE: ␣
     BSPC: ⌫
@@ -350,8 +364,8 @@ parse_config:
     INS: Insert
     HOME: Home
     END: End
-    CAPS: Caps Lock
-    PSCRN: Print Scrn
+    CAPS: $$tabler:letter-case-upper$$
+    PSCRN: $$tabler:focus-centered$$
     PAUSE_BREAK: Pause Break
 
     UP: ↑
