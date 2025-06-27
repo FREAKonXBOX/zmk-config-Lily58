@@ -474,3 +474,5 @@ parse_config:
     N7: {t: 7, s: "&"}
     N8: {t: 8, s: "*"}
     N9: {t: 9, s: "("}
+    F23: {t: $$mdi:lightbulb-on-50$$}
+    F24: {t: $$mdi:lightbulb-on$$}

@@ -252,9 +252,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F24
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - $$mdi:lightbulb-on$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -264,9 +264,9 @@ layers:
   - Reset
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F23
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - $$mdi:lightbulb-on-50$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
