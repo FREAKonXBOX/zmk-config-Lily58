@@ -10,7 +10,8 @@
 
 / {
     chosen {
-        zephyr,display = &oled;
+        //zephyr,display = &oled; //for normal prospector
+        zephyr,display = &st7789; //for janpfischer dongle_screen
         zmk,kscan = &mock_kscan;
         zmk,physical-layout = &kata0510_lily58_layout;
     };

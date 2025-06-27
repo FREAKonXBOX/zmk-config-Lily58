@@ -18,3 +18,6 @@ config SHIELD_LILY58_DONGLE_XIAO
 
 config SHIELD_LILY58_DONGLE_PRO_MICRO
     def_bool $(shields_list_contains,lily58_dongle_pro_micro)
+
+config SHIELD_DONGLE_SCREEN
+    def_bool $(shields_list_contains,dongle_screen)
