@@ -206,15 +206,15 @@
         control_layer {
             display-name = "CONTROL,BOOTLOADER,RESET";
 // ------------------------------------------------------------------------------------------------------------
-// | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
-// |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-// |sys-res|     |     |      |      |      |                   |      |       |       |      |       |       |
-// | Bload |p-on |p-off| p-tog|      |      |        |  |       |      |       |       |      |       | Bload |
-//                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
+// | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5   |                   |      |       |       |      |       |       |
+// |       |     |     |      |      |dongleup|                   |      |       |       |      |       |       |
+// |sys-res|     |     |      |      |dongled |                   |      |       |       |      |       |       |
+// | Bload |p-on |p-off| p-tog|      |        |        |  |       |      |       |       |      |       | Bload |
+//                     | ALT  | GUI  | LOWER  |  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4               &trans    &trans   &trans    &trans    &trans    &trans
-&trans      &trans           &trans            &trans            &trans       &trans                     &trans    &trans   &trans    &trans    &trans    &trans
-&sys_reset  &trans           &trans            &trans            &trans       &trans                     &trans    &trans   &trans    &trans    &trans    &trans
+&trans      &trans           &trans            &kp F24           &trans       &trans                     &trans    &trans   &trans    &trans    &trans    &trans
+&sys_reset  &trans           &trans            &kp F23           &trans       &trans                     &trans    &trans   &trans    &trans    &trans    &trans
 &bootloader &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans   &trans &trans   &trans    &trans   &trans    &trans    &trans    &bootloader
                              &trans            &trans            &trans       &trans   &trans   &trans   &trans    &trans
             >;
