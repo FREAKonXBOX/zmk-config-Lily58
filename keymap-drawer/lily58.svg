@@ -506,8 +506,8 @@ stroke-width: 2;
   visibility: hidden;
 }
 </style>
-<g transform="translate(40, 0)" class="layer-Default">
-<text x="0" y="28" class="label" id="Default">Default:</text>
+<g transform="translate(40, 0)" class="layer-Base">
+<text x="0" y="28" class="label" id="Base">Base:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -738,10 +738,9 @@ stroke-width: 2;
 </g>
 <g transform="translate(280, 266)" class="key keypos-52">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 86%">MOUSE,</tspan><tspan x="0" dy="1.2em" style="font-size: 86%">F#,</tspan><tspan x="0" dy="1.2em" style="font-size: 86%">SYMBOLS</tspan>
-</text>
-</g>
+<a href="#One">
+<text x="0" y="0" class="key tap layer-activator">One</text>
+</a></g>
 <g transform="translate(350, 266) rotate(30.0)" class="key keypos-53">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 <text x="0" y="0" class="key tap">␣</text>
@@ -752,10 +751,9 @@ stroke-width: 2;
 </g>
 <g transform="translate(644, 266)" class="key keypos-55">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 60%">MEDIA,</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">TEXT</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">MGMT,ARRO…</tspan>
-</text>
-</g>
+<a href="#Two">
+<text x="0" y="0" class="key tap layer-activator">Two</text>
+</a></g>
 <g transform="translate(700, 260)" class="key keypos-56">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:backspace-outline" xlink:href="#mdi:backspace-outline" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:backspace-outline"/>
@@ -766,8 +764,8 @@ stroke-width: 2;
 </g>
 </g>
 </g>
-<g transform="translate(40, 372)" class="layer-MOUSE,F#,SYMBOLS">
-<text x="0" y="28" class="label" id="MOUSEFSYMBOLS">MOUSE,F#,SYMBOLS:</text>
+<g transform="translate(40, 372)" class="layer-One">
+<text x="0" y="28" class="label" id="One">One:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -952,10 +950,9 @@ stroke-width: 2;
 </g>
 <g transform="translate(364, 182)" class="key keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 60%">NUMPAD</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">,EXT</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">POWER,KEY…</tspan>
-</text>
-</g>
+<a href="#Three">
+<text x="0" y="0" class="key tap layer-activator">Three</text>
+</a></g>
 <g transform="translate(560, 182)" class="key trans keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
@@ -1022,8 +1019,8 @@ stroke-width: 2;
 </g>
 </g>
 </g>
-<g transform="translate(40, 745)" class="layer-MEDIA,TEXT MGMT,ARROWS">
-<text x="0" y="28" class="label" id="MEDIATEXT-MGMTARROWS">MEDIA,TEXT MGMT,ARROWS:</text>
+<g transform="translate(40, 745)" class="layer-Two">
+<text x="0" y="28" class="label" id="Two">Two:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1203,10 +1200,9 @@ stroke-width: 2;
 </g>
 <g transform="translate(560, 182)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 60%">CONTROL</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">,</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">BOOTLOADE…</tspan>
-</text>
-</g>
+<a href="#Four">
+<text x="0" y="0" class="key tap layer-activator">Four</text>
+</a></g>
 <g transform="translate(616, 210)" class="key trans keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
@@ -1266,8 +1262,8 @@ stroke-width: 2;
 </g>
 </g>
 </g>
-<g transform="translate(40, 1117)" class="layer-NUMPAD,EXT POWER,KEYPAD">
-<text x="0" y="28" class="label" id="NUMPADEXT-POWERKEYPAD">NUMPAD,EXT POWER,KEYPAD:</text>
+<g transform="translate(40, 1117)" class="layer-Three">
+<text x="0" y="28" class="label" id="Three">Three:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1521,8 +1517,8 @@ stroke-width: 2;
 </g>
 </g>
 </g>
-<g transform="translate(40, 1489)" class="layer-CONTROL,BOOTLOADER,RESET">
-<text x="0" y="28" class="label" id="CONTROLBOOTLOADERRESET">CONTROL,BOOTLOADER,RESET:</text>
+<g transform="translate(40, 1489)" class="layer-Four">
+<text x="0" y="28" class="label" id="Four">Four:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

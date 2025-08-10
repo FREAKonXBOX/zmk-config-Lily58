@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: lily58}
 layers:
-  Default:
+  Base:
   - Esc
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -53,13 +53,13 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$tabler:brand-windows$$
   - $$tabler:alt$$
-  - MOUSE,F#,SYMBOLS
+  - One
   - ␣
   - ⏎
-  - MEDIA,TEXT MGMT,ARROWS
+  - Two
   - $$mdi:backspace-outline$$
   - ⌦
-  MOUSE,F#,SYMBOLS:
+  One:
   - F1
   - F2
   - F3
@@ -102,7 +102,7 @@ layers:
   - '#'
   - Insert
   - {t: ▽, type: trans}
-  - NUMPAD,EXT POWER,KEYPAD
+  - Three
   - {t: ▽, type: trans}
   - {t: '-', s: _}
   - {t: ▽, type: trans}
@@ -118,7 +118,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  MEDIA,TEXT MGMT,ARROWS:
+  Two:
   - $$tabler:volume-off$$
   - $$tabler:volume-2$$
   - $$tabler:volume$$
@@ -162,7 +162,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - CONTROL,BOOTLOADER,RESET
+  - Four
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -177,7 +177,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  NUMPAD,EXT POWER,KEYPAD:
+  Three:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -236,7 +236,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  CONTROL,BOOTLOADER,RESET:
+  Four:
   - BT CLR
   - BT 1
   - BT 2
