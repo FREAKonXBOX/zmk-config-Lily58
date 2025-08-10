@@ -9,10 +9,12 @@ manifest:
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
     # Prospector Dongle
-    - name: carrefinho
-      url-base: https://github.com/carrefinho
+    #- name: carrefinho
+    #  url-base: https://github.com/carrefinho
     - name: janpfischer
       url-base: https://github.com/janpfischer
+    - name: prospector
+      url-base: https://github.com/t-ogura
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -22,18 +24,15 @@ manifest:
     #- name: zmk-dongle-display
     #  remote: englmaxi
     #  revision: main
-    # Diff Prospector Dongle
-    - name: zmk-dongle-screen
-      remote: janpfischer
-      revision: main
-    # nice_oled - nice_epaper
+      # nice_oled - nice_epaper
     - name: zmk-nice-oled
       remote: mctechnology17
       revision: main
     # dongle_display!view
-    - name: zmk-dongle-display-view
-      remote: mctechnology17
-      revision: main
+    - name: prospector-zmk-module
+      remote: prospector
+      revision: v1.0.0
+      path: modules/prospector-zmk-module
     # oled Adapter
     - name: zmk-oled-adapter
       remote: mctechnology17
